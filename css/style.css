@@ -64,6 +64,10 @@ form {
   box-shadow: 9px 9px 18px #8e838e, -9px -9px 18px #c0b1c0;
   color: #6d6779;
 }
+.quote strong {
+  font-style: normal;
+  color: #b3a4d4;
+}
 footer {
   text-align: center;
   font-size: 13px;
