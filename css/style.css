@@ -20,14 +20,21 @@ h1 {
   font-family: "Poppins", sans-serif;
   color: #9a91ad;
 }
-form {
+.form-container {
   padding: 30px;
   background-color: rgb(247, 240, 240, 0.7);
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
   border-radius: 40px;
-  display: flex;
   margin-bottom: 30px;
   box-shadow: 9px 9px 18px #8e838e, -9px -9px 18px #c0b1c0;
+}
+form {
+  display: flex;
+}
+.example {
+  margin-top: 10px;
+  margin-left: 18px;
+  color: rgba(0, 0, 0, 0.642);
 }
 .instructions {
   padding: 20px;
@@ -64,9 +71,26 @@ form {
   box-shadow: 9px 9px 18px #8e838e, -9px -9px 18px #c0b1c0;
   color: #6d6779;
 }
+.hidden {
+  display: none;
+}
 .quote strong {
   font-style: normal;
   color: #b3a4d4;
+}
+.generating {
+  animation: blink-animation 0.75s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
 footer {
   text-align: center;
